@@ -1,0 +1,159 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for the application. [CHAR LIMIT=15] -->
+    <string name="app_name">Flowery Quiz</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="name">Your name</string>
+
+    <!-- Text below the title to greet a user and invite him to do the quiz. [CHAR LIMIT=NONE] -->
+    <string name="app_greeting">How much do you know about flowers and plants? Let\'s find out!
+        \n\nFor starters please tell us your name:</string>
+    <!-- Text below the title to greet a user and invite him to do the quiz. [CHAR LIMIT=NONE] -->
+    <string name="good_luck">Good Luck!</string>
+
+    <!-- First quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_1">1. What flowers blooming in spring are significant part of Japanese culture?</string>
+    <!-- First quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_1_a">a. Cherry blossoms</string>
+    <!-- First quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_1_b">b. Orchids</string>
+    <!-- First quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_1_c">c. Azaleas (Rhododendrons)</string>
+
+    <!-- Second quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_2">2. By which historic country tulips were introduced to Europe?</string>
+    <!-- Second quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_2_a">a. The Qing Empire (Qing Dynasty)</string>
+    <!-- Second quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_2_b">b. The Low Countries (old Netherlands region)</string>
+    <!-- Second quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_2_c">c. The Ottoman Empire (Turkish Empire)</string>
+
+    <!-- Third quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_3">3. Which flowers are edible?</string>
+    <!-- Third quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_3_a">a. Tulips</string>
+    <!-- Third quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_3_b">b. Marigolds</string>
+    <!-- Third quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_3_c">c. Convallarias (&quot;Lilies of the valley&quot;)</string>
+    <!-- Third quiz question - answer d. [CHAR LIMIT=NONE] -->
+    <string name="question_3_d">d. Violets</string>
+
+    <!-- Fourth quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_4">4. What flower genus is shown on picture?</string>
+    <!-- Fourth quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_4_a">a. Peony</string>
+    <!-- Fourth quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_4_b">b. Trollius</string>
+    <!-- Fourth quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_4_c">c. Rose</string>
+
+    <!-- Fifth quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_5">5. Which of the following flowers are fragrant?</string>
+    <!-- Fifth quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_5_a">a. Lilies</string>
+    <!-- Fifth quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_5_b">b. Hyacinths</string>
+    <!-- Fifth quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_5_c">c. Hydrangeas</string>
+    <!-- Fifth quiz question - answer d. [CHAR LIMIT=NONE] -->
+    <string name="question_5_d">d. Daisies</string>
+    <!-- Fifth quiz question - answer e. [CHAR LIMIT=NONE] -->
+    <string name="question_5_e">e. Freesias</string>
+
+    <!-- Sixth quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_6">6. Leaf of which tree is depicted on Canadian flag?</string>
+    <!-- Sixth quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_6_a">Write your answer here</string>
+
+    <!-- Seventh quiz question. [CHAR LIMIT=NONE] -->
+    <string name="question_7">7. Which of the following plants genera are succulents?</string>
+    <!-- Seventh quiz question - answer a. [CHAR LIMIT=NONE] -->
+    <string name="question_7_a">a. Fern</string>
+    <!-- Seventh quiz question - answer b. [CHAR LIMIT=NONE] -->
+    <string name="question_7_b">b. Cactuses</string>
+    <!-- Seventh quiz question - answer c. [CHAR LIMIT=NONE] -->
+    <string name="question_7_c">c. Orchid</string>
+    <!-- Seventh quiz question - answer d. [CHAR LIMIT=NONE] -->
+    <string name="question_7_d">d. Agave</string>
+
+    <!-- Text displayed in the Button for submitting answers [CHAR LIMIT=12] -->
+    <string name="submit_button">Submit Answers</string>
+
+    <!-- Initial text displayed below Submit button [CHAR LIMIT=NONE] -->
+    <string name="initial_result_text" translatable="false"> </string>
+
+    <!-- Hint for question 3 [CHAR LIMIT=NONE] -->
+    <string name="hint_q3">Make sure you answered correctly ;)</string>
+
+    <!-- Hint for question 5 [CHAR LIMIT=NONE] -->
+    <string name="hint_q5">Are they..?</string>
+
+    <!--
+      Message displayed when name field is not filled [CHAR LIMIT=NONE]
+        -->
+    <string name="name_not_given_message">You haven\'t introduced. Please insert your name first.</string>
+
+    <!--
+      Name for quiz summary. It will be shown in the format of
+      "Thank you, Anna" [CHAR LIMIT=NONE]
+    -->
+    <string name="quiz_summary_name">Thank you, <xliff:g example="Anna" id="name">%s</xliff:g>.</string>
+
+    <!--
+      Final result passed for quiz summary. It will be shown in the format of
+      "Your score is 2/7." [CHAR LIMIT=NONE]
+        -->
+    <string name="quiz_summary_score">\nYour score is <xliff:g example="2" id="score">%d</xliff:g> / 7</string>
+
+    <!--
+      Message displayed when some of the questions are not filled [CHAR LIMIT=NONE]
+        -->
+    <string name="not_completed_message">You haven\'t finished your quiz. Please go back to:</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q1">\nQuestion 1</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q2">\nQuestion 2</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q3">\nQuestion 3</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q4">\nQuestion 4</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q5">\nQuestion 5</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q6">\nQuestion 6</string>
+
+    <!-- Word 'Question' + its number [CHAR LIMIT=20] -->
+    <string name="q7">\nQuestion 7</string>
+
+    <!--
+      Message displayed when some of the questions are not filled [CHAR LIMIT=NONE]
+        -->
+    <string name="incorrect_message">Do you want to improve your score?\n
+        You should go back to the following questions:</string>
+
+    <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
+    <string name="maple1">maple</string>
+
+    <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
+    <string name="maple2">maple </string>
+
+    <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
+    <string name="maple3">maple tree</string>
+
+    <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
+    <string name="maple4">maple leaf</string>
+
+    <!-- Description of an image in question 4 [CHAR LIMIT=NONE] -->
+    <string name="image_flowers_desc">White flowers photo</string>
+
+    <!-- Description of an image in question 6 [CHAR LIMIT=NONE] -->
+    <string name="image_canada_desc">Canadian flag drawing</string>
+</resources>

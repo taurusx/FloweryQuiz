@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Kwiatowy Quiz</string>
+    <string name="good_luck">Powodzenia!</string>
+    <string name="app_greeting">Jak dobrze znasz się na kwiatach i roślinach? Przekonajmy się!
+        \n\nNa początek prosimy o podanie imienia:</string>
+    <string name="hint_q3">Upewnij się, że odpowiedź jest prawidłowa ;)</string>
+    <string name="hint_q5">Na pewno..?</string>
+    <string name="incorrect_message">Chcesz poprawić swój wynik?
+        \nPrzejrzyj ponownie odpowiedzi do pytań:</string>
+    <string name="name">Twoje imię</string>
+    <string name="name_not_given_message">Poznajmy się! Podaj nam na początek swoje imię.</string>
+    <string name="not_completed_message">Quiz nie jest skończony! Uzupełnij następujące pytania:</string>
+    <string name="q1">\nPytanie 1</string>
+    <string name="q2">\nPytanie 2</string>
+    <string name="q3">\nPytanie 3</string>
+    <string name="q4">\nPytanie 4</string>
+    <string name="q5">\nPytanie 5</string>
+    <string name="q6">\nPytanie 6</string>
+    <string name="q7">\nPytanie 7</string>
+    <string name="question_1">1. Które z kwiatów kwitnących na wiosnę stanowią symbol kultury japońskiej?</string>
+    <string name="question_1_a">a. Kwiaty wiśni</string>
+    <string name="question_1_b">b. Orchidee</string>
+    <string name="question_1_c">c. Azalie (Rododendrony)</string>
+    <string name="question_2">2. Któremu z historycznych państw zawdzięczamy pojawienie się tulipanów w Europie?</string>
+    <string name="question_2_a">a. Imperium Dynastii Qing (obszar dzisiejszych Chin)</string>
+    <string name="question_2_b">b. Niderlandy (obszar dzisiejszej Holandii)</string>
+    <string name="question_2_c">c. Imperium Osmańskie (obszar dzisiejszej Turcji)</string>
+    <string name="question_3">3. Które kwiaty są jadalne?</string>
+    <string name="question_3_a">a. Tulipany</string>
+    <string name="question_3_b">b. Nagietki</string>
+    <string name="question_3_c">c. Konwalie</string>
+    <string name="question_3_d">d. Fiołki</string>
+    <string name="question_4">4. Jaki gatunek kwiatów jest przedstawiony na zdjęciu?</string>
+    <string name="question_4_a">a. Peonia</string>
+    <string name="question_4_b">b. Pełnik</string>
+    <string name="question_4_c">c. Róża</string>
+    <string name="question_5">5. Które z wymienionych kwiatów są pachnące?</string>
+    <string name="question_5_a">a. Lilie</string>
+    <string name="question_5_b">b. Hiacynty</string>
+    <string name="question_5_c">c. Hortensje</string>
+    <string name="question_5_d">d. Stokrotki</string>
+    <string name="question_5_e">e. Frezje</string>
+    <string name="question_6">6. Liść którego drzewa przedstawiony jest na fladze Kanady?</string>
+    <string name="question_6_a">Wpisz swoją odpowiedź</string>
+    <string name="question_7">7. Które z wymienionych gatunków są sukulentami?</string>
+    <string name="question_7_a">a. Paprocie</string>
+    <string name="question_7_b">b. Kaktusy</string>
+    <string name="question_7_c">c. Orchidee</string>
+    <string name="question_7_d">d. Agawy</string>
+    <string name="quiz_summary_name">Dziękujemy, <xliff:g example="Anna" id="name">%s</xliff:g>.</string>
+    <string name="quiz_summary_score">\nTwój wynik to <xliff:g example="2" id="score">%d</xliff:g> / 7</string>
+    <string name="submit_button">Sprawdź odpowiedzi</string>
+    <string name="maple1">klon</string>
+    <string name="maple2">klonu</string>
+    <string name="maple3">lisc klonu</string>
+    <string name="maple4">liść klonu</string>
+    <string name="image_canada_desc">Rysunek flagi kanadyjskiej</string>
+    <string name="image_flowers_desc">Zdjęcie białych kwiatów</string>
+</resources>

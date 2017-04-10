@@ -1,0 +1,69 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Main title theme -->
+    <style name="AppTitle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorMainFont</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Greeting text theme -->
+    <style name="AppGreeting" parent="Theme.AppCompat">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <!-- Greeting text theme - Good Luck -->
+    <style name="GoodLuck" parent="Theme.AppCompat">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Card view style -->
+    <style name="RegularCardQuestion" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorMainFont</item>
+    </style>
+
+    <!-- Card view style -->
+    <style name="MyCheckbox" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorMainFont</item>
+        <item name="android:textSize">@dimen/checkbox_text_size</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+    </style>
+
+    <!-- Card view style -->
+    <style name="MyRadioButton" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorMainFont</item>
+        <item name="android:textSize">@dimen/checkbox_text_size</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+    </style>
+
+    <!-- Score field style -->
+    <style name="ScoreStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorMainFont</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Incorrect questions field style -->
+    <style name="IncorrectStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorIncorrectFont</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>
