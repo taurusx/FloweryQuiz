@@ -11,23 +11,23 @@
     <!-- Main title theme -->
     <style name="AppTitle" parent="Theme.AppCompat">
         <item name="android:textColor">@color/colorMainFont</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:paddingTop">24dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">@dimen/title_padding_top</item>
+        <item name="android:paddingBottom">@dimen/title_padding_bottom</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Greeting text theme -->
     <style name="AppGreeting" parent="Theme.AppCompat">
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">@dimen/subtext_padding</item>
+        <item name="android:paddingBottom">@dimen/subtext_padding</item>
     </style>
 
     <!-- Greeting text theme - Good Luck -->
     <style name="GoodLuck" parent="Theme.AppCompat">
-        <item name="android:paddingTop">16dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">@dimen/subtext_padding</item>
+        <item name="android:paddingBottom">@dimen/subtext_padding</item>
         <item name="android:gravity">end</item>
         <item name="android:textStyle">italic</item>
     </style>
@@ -54,16 +54,16 @@
     <!-- Score field style -->
     <style name="ScoreStyle" parent="Theme.AppCompat">
         <item name="android:textColor">@color/colorMainFont</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">@dimen/score_padding_top</item>
+        <item name="android:paddingBottom">@dimen/score_padding_bottom</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Incorrect questions field style -->
     <style name="IncorrectStyle" parent="Theme.AppCompat">
         <item name="android:textColor">@color/colorIncorrectFont</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">@dimen/score_padding_top</item>
+        <item name="android:paddingBottom">@dimen/score_padding_bottom</item>
     </style>
 
 </resources>

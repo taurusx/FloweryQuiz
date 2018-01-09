@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity {
 
     /**
-     * variables
+     * Variables holding information whether questions are completed
      */
     boolean question1Completed = false;
     boolean question2Completed = false;
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Little hint for question 3.
-        final CheckBox chk3C = (CheckBox) findViewById(R.id.checkbox_3_c);
+        final CheckBox chk3C = findViewById(R.id.checkbox_3_c);
         chk3C.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,11 +114,10 @@ public class MainActivity extends AppCompatActivity {
      * @return answers are correct or not?
      */
     public boolean isThreeCorrect() {
-        CheckBox threeACheckBox = (CheckBox) findViewById(R.id.checkbox_3_a);
-        CheckBox threeBCheckBox = (CheckBox) findViewById(R.id.checkbox_3_b);
-        // Why does it work without R.id?!
-        CheckBox threeCCheckBox = (CheckBox) findViewById(R.id.checkbox_3_c);
-        CheckBox threeDCheckBox = (CheckBox) findViewById(R.id.checkbox_3_d);
+        CheckBox threeACheckBox = findViewById(R.id.checkbox_3_a);
+        CheckBox threeBCheckBox = findViewById(R.id.checkbox_3_b);
+        CheckBox threeCCheckBox = findViewById(R.id.checkbox_3_c);
+        CheckBox threeDCheckBox = findViewById(R.id.checkbox_3_d);
         // Validate if any answer is checked
         if (!(threeACheckBox.isChecked() || threeBCheckBox.isChecked() || threeCCheckBox.isChecked() ||
                 threeDCheckBox.isChecked())) {
@@ -127,7 +126,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             question3Completed = true;
             // Correct answers are A, B, D altogether. Return if correct boxes are now checked?
-            return (threeACheckBox.isChecked() && threeBCheckBox.isChecked() && threeDCheckBox.isChecked());
+            return (threeACheckBox.isChecked() && threeBCheckBox.isChecked() && threeDCheckBox.isChecked()
+                    && !threeCCheckBox.isChecked());
         }
     }
 
@@ -166,11 +166,11 @@ public class MainActivity extends AppCompatActivity {
      * @return answers are correct or not?
      */
     public boolean isFiveCorrect() {
-        CheckBox fiveACheckBox = (CheckBox) findViewById(R.id.checkbox_5_a);
-        CheckBox fiveBCheckBox = (CheckBox) findViewById(R.id.checkbox_5_b);
-        CheckBox fiveCCheckBox = (CheckBox) findViewById(R.id.checkbox_5_c);
-        CheckBox fiveDCheckBox = (CheckBox) findViewById(R.id.checkbox_5_d);
-        CheckBox fiveECheckBox = (CheckBox) findViewById(R.id.checkbox_5_e);
+        CheckBox fiveACheckBox = findViewById(R.id.checkbox_5_a);
+        CheckBox fiveBCheckBox = findViewById(R.id.checkbox_5_b);
+        CheckBox fiveCCheckBox = findViewById(R.id.checkbox_5_c);
+        CheckBox fiveDCheckBox = findViewById(R.id.checkbox_5_d);
+        CheckBox fiveECheckBox = findViewById(R.id.checkbox_5_e);
         // Validate if any answer is checked
         if (!(fiveACheckBox.isChecked() || fiveBCheckBox.isChecked() || fiveCCheckBox.isChecked() ||
                 fiveDCheckBox.isChecked() || fiveECheckBox.isChecked())) {
@@ -179,7 +179,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             question5Completed = true;
             // Correct answers are A, B, E altogether. Return if correct boxes are now checked?
-            return (fiveACheckBox.isChecked() && fiveBCheckBox.isChecked() && fiveECheckBox.isChecked());
+            return (fiveACheckBox.isChecked() && fiveBCheckBox.isChecked() && fiveECheckBox.isChecked()
+                    && !fiveCCheckBox.isChecked() && !fiveDCheckBox.isChecked());
         }
     }
 
@@ -190,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public boolean isSixCorrect() {
         boolean sixCorrect = false;
-        EditText sixEditText = (EditText) findViewById(R.id.question_6_input);
-        String insertedSixAnswer = sixEditText.getText().toString();
+        EditText sixEditText = findViewById(R.id.question_6_input);
+        String insertedSixAnswer = sixEditText.getText().toString().trim();
         if (insertedSixAnswer.equalsIgnoreCase(getString(R.string.maple1)) ||
                 insertedSixAnswer.equalsIgnoreCase(getString(R.string.maple2)) ||
                 insertedSixAnswer.equalsIgnoreCase(getString(R.string.maple3)) ||
@@ -209,10 +210,10 @@ public class MainActivity extends AppCompatActivity {
      * @return answers are correct or not?
      */
     public boolean isSevenCorrect() {
-        CheckBox sevenACheckBox = (CheckBox) findViewById(R.id.checkbox_7_a);
-        CheckBox sevenBCheckBox = (CheckBox) findViewById(R.id.checkbox_7_b);
-        CheckBox sevenCCheckBox = (CheckBox) findViewById(R.id.checkbox_7_c);
-        CheckBox sevenDCheckBox = (CheckBox) findViewById(R.id.checkbox_7_d);
+        CheckBox sevenACheckBox = findViewById(R.id.checkbox_7_a);
+        CheckBox sevenBCheckBox = findViewById(R.id.checkbox_7_b);
+        CheckBox sevenCCheckBox = findViewById(R.id.checkbox_7_c);
+        CheckBox sevenDCheckBox = findViewById(R.id.checkbox_7_d);
         // Validate if any answer is checked
         if (!(sevenACheckBox.isChecked() || sevenBCheckBox.isChecked() || sevenCCheckBox.isChecked() ||
                 sevenDCheckBox.isChecked())) {
@@ -221,7 +222,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             question7Completed = true;
             // Correct answers are B, D altogether. Return if correct boxes are now checked?
-            return (sevenBCheckBox.isChecked() && sevenDCheckBox.isChecked());
+            return (sevenBCheckBox.isChecked() && sevenDCheckBox.isChecked()
+                    && !sevenACheckBox.isChecked() && !sevenCCheckBox.isChecked());
         }
     }
 
@@ -261,7 +263,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean isNameGiven() {
         //Is name given?
         boolean nameIsGiven = false;
-        EditText nameEditText = (EditText) findViewById(R.id.name_input);
+        EditText nameEditText = findViewById(R.id.name_input);
         String givenName = nameEditText.getText().toString();
         if (!(Arrays.asList("", " ", "  ", "   ").contains(givenName))) {
             nameIsGiven = true;
@@ -360,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
         if (scoreFinal < 7) {
             displayIncorrectMessage(incorrectFinalMessage);
         } else {
-            TextView incorrectText = (TextView) findViewById(R.id.incorrect_text_view);
+            TextView incorrectText = findViewById(R.id.incorrect_text_view);
             incorrectText.setVisibility(View.GONE);
         }
         return scoreFinal;
@@ -379,7 +381,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         } else if (isQuizComplete()) {
             //Get name inserted at the beginning
-            EditText nameEditText = (EditText) findViewById(R.id.name_input);
+            EditText nameEditText = findViewById(R.id.name_input);
             String insertedName = nameEditText.getText().toString();
             //Summarize every answer, display text below
             String quizSummary = createQuizSummary(insertedName, countScore());
@@ -409,7 +411,7 @@ public class MainActivity extends AppCompatActivity {
      * @param message - information to be displayed
      */
     public void displayQuizMessage(String message) {
-        TextView summaryText = (TextView) findViewById(R.id.summary_text_view);
+        TextView summaryText = findViewById(R.id.summary_text_view);
         summaryText.setVisibility(View.VISIBLE);
         summaryText.setText(message);
     }
@@ -420,7 +422,7 @@ public class MainActivity extends AppCompatActivity {
      * @param message - information to be displayed
      */
     public void displayIncorrectMessage(String message) {
-        TextView summaryText = (TextView) findViewById(R.id.incorrect_text_view);
+        TextView summaryText = findViewById(R.id.incorrect_text_view);
         summaryText.setVisibility(View.VISIBLE);
         summaryText.setText(message);
     }

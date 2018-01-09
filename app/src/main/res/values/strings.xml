@@ -93,7 +93,7 @@
     <!--
       Message displayed when name field is not filled [CHAR LIMIT=NONE]
         -->
-    <string name="name_not_given_message">You haven\'t introduced. Please insert your name first.</string>
+    <string name="name_not_given_message">You haven\'t introduced yourself. Please insert your name first.</string>
 
     <!--
       Name for quiz summary. It will be shown in the format of
@@ -143,7 +143,7 @@
     <string name="maple1">maple</string>
 
     <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
-    <string name="maple2">maple </string>
+    <string name="maple2">maples</string>
 
     <!-- Correct word 'maple' and its versions as answer to question 6 [CHAR LIMIT=20] -->
     <string name="maple3">maple tree</string>
